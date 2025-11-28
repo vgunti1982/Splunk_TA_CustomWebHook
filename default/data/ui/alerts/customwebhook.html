@@ -1,0 +1,33 @@
+<form class="form-horizontal form-complex">
+    <div class="control-group">
+        <label class="control-label" for="lis_url">URL</label>
+
+        <div class="controls">
+            <input type="text" name="action.customwebhook.param.listurl" id="lis_url" placeholder="https://thirdpartyurl.com/" />
+            <span class="help-block">Please enter the webhook endpoint</span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="lis_headers">Headers</label>
+
+        <div class="controls">
+            <textarea class="input-xlarge" rows="8" cols="40" name="action.customwebhook.param.listheaders" id="lis_headers">{
+  "Authorization": "Api-Token xxxxxxxxxx",
+  "Content-Type": "text/plain"
+}</textarea>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="lis_body">Body Format</label>
+
+        <div class="controls">
+            <textarea class="input-xlarge" rows="8" cols="40" name="action.customwebhook.param.listbody" id="lis_body">{
+  "sid": $$sid$$,
+  "search_name": $$search_name$$,
+  "owner": $$owner$$,
+  "results_link": $$results_link$$,
+  "result": $$full_result$$
+}</textarea>
+        </div>
+    </div>
+</form>

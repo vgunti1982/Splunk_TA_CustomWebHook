@@ -1,0 +1,5 @@
+Many real-world Splunk deployments require sending alerts to third-party applications via Webhooks for centralized event management and to trigger subsequent workflows for alerting or incident handling. Splunk's native Webhook alert action offers this functionality but has significant drawbacks. It restricts users to providing only a URL, which often isn't sufficient for secure HTTPS endpoints that necessitate authorization headers. Additionally, the out-of-the-box action lacks the ability to customize the request payload, a critical requirement for seamless integration with most external APIs.
+
+This application is designed to overcome these two challenges. It provides users with the capability to specify custom headers and define the exact request payload to be sent with their Webhook alerts.
+
+We are releasing the source code of this application under an open-source license. We encourage community contributions and welcome any further modifications.
